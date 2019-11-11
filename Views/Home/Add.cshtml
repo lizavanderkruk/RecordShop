@@ -1,0 +1,28 @@
+﻿@model RecordShop.Models.ProductenModel
+@{
+    ViewData["Title"] = "Add";
+}
+@using (Html.BeginForm("Add", "Home"))
+{
+    <table>
+        <tr>
+            @Html.HiddenFor(m => m.ProductID)
+            <td>@Html.LabelFor(m => m.Naam)</td>
+            <td>@Html.LabelFor(m => m.Artiest)</td>
+            <td>@Html.LabelFor(m => m.Genre)</td>
+            <td>@Html.LabelFor(m => m.ReleaseDate)</td>
+            <td>@Html.LabelFor(m => m.Populair)</td>
+            <td>@Html.LabelFor(m => m.Prijs)</td> 
+        </tr>
+        <tr>
+            <td>@Html.TextBoxFor(m => m.Naam)</td>
+            <td>@Html.TextBoxFor(m => m.Artiest)</td>
+            <td>@Html.TextBoxFor(m => m.Genre)</td>
+            <td>@Html.TextBoxFor(m => m.ReleaseDate)</td>
+            <td>@Html.TextBoxFor(m => m.Populair)</td>
+            <td>@Html.TextBoxFor(m => m.Prijs)</td>
+        </tr>
+    </table>
+
+    <button type="submit">Add</button>
+}

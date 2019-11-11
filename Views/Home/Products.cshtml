@@ -1,0 +1,25 @@
+﻿@model List<RecordShop.Models.ProductenModel>
+@{
+    ViewData["Title"] = "Products";
+}
+
+@Html.ActionLink("Voeg nieuw product toe", "Add", "Home")
+<table>
+    <tr>
+        <th>Album</th>
+        <th>Artiest</th>
+        <th>Genre</th>
+        <th>Release Date</th>
+        <th>Prijs</th>
+        <th>Totale voorraad</th>
+        <th>Voorraad per winkel</th>
+        <th>Update product</th>
+        <th>Delete product</th>
+    </tr>
+   
+    @Html.DisplayForModel()
+
+</table>
+
+
+

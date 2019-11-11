@@ -1,0 +1,11 @@
+﻿@model RecordShop.Models.VestigingenModel
+
+<tr>
+    <td>@Model.VestigingID</td>
+    <td>@Model.Voorraad</td>
+
+    <td>@Html.ActionLink("Update voorraad", "UpdateVoorraad", "Vestigingen", new { vestigingID = Model.VestigingID, productID = Model.ProductID }, null)</td>
+
+
+</tr>
+

@@ -1,0 +1,18 @@
+﻿@model RecordShop.Models.VestigingenModel
+
+@using (Html.BeginForm("UpdateVoorraad", "Vestigingen"))
+{
+    <table>
+        <tr>
+            @Html.HiddenFor(m => m.ProductID)
+            <td>@Html.LabelFor(m => m.VestigingID)</td>
+            <td>@Html.LabelFor(m => m.Voorraad)</td>
+        </tr>
+        <tr>
+            <td>@Html.TextBoxFor(m => m.VestigingID)</td>
+            <td>@Html.TextBoxFor(m => m.Voorraad)</td>
+        </tr>
+    </table>
+
+    <button type="submit">Update voorraad</button>
+}

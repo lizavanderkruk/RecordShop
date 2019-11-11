@@ -1,0 +1,16 @@
+﻿@model RecordShop.Models.ProductenModel
+
+<tr>
+    <td>@Model.Naam</td>
+    <td>@Model.Artiest</td>
+    <td>@Model.Genre</td>
+    <td>@Model.ReleaseDate</td>
+    <td>@Model.Prijs</td>
+    <td>@Model.TotaleVoorraad</td>
+    <td>@Html.ActionLink("Winkelvoorraad", "Vestigingen", "Vestigingen", new { productID = Model.ProductID }, null)</td>
+    <td>@Html.ActionLink("Update product", "Update", "Home", new { productID = Model.ProductID }, null)</td>
+    <td>@Html.ActionLink("Delete product", "Delete", "Home", new { productID = Model.ProductID }, null)</td>
+
+    
+</tr>
+
